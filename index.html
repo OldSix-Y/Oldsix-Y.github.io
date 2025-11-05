@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="个人学术主页 - 研究者姓名">
+    <title>姓名 - 个人主页</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">您的姓名</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">主页</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#education" class="nav-link">教育背景</a></li>
+                <li><a href="#research" class="nav-link">研究成果</a></li>
+                <li><a href="#publications" class="nav-link">发表论文</a></li>
+                <li><a href="#honors" class="nav-link">荣誉奖项</a></li>
+                <li><a href="#experience" class="nav-link">工作经历</a></li>
+                <li><a href="#skills" class="nav-link">技术专长</a></li>
+                <li><a href="#hobbies" class="nav-link">兴趣爱好</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页部分 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <img src="avatar.jpg" alt="个人照片" onerror="this.src='https://via.placeholder.com/200'">
+            </div>
+            <h1 class="hero-title">您的姓名 (Your Name)</h1>
+            <p class="hero-subtitle">您的职位 | 您的单位</p>
+            <div class="hero-social">
+                <a href="mailto:your.email@example.com" class="social-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://scholar.google.com" target="_blank" class="social-link" title="Google Scholar">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+                <a href="https://github.com/yourusername" target="_blank" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://researchgate.net" target="_blank" class="social-link" title="ResearchGate">
+                    <i class="fab fa-researchgate"></i>
+                </a>
+                <a href="https://orcid.org" target="_blank" class="social-link" title="ORCID">
+                    <i class="fab fa-orcid"></i>
+                </a>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <p>
+                    我是 <strong>您的姓名</strong>，目前在 <strong>您的单位</strong> 担任 <strong>您的职位</strong>，师从 <strong>导师姓名</strong> 教授。
+                    我于 20XX 年 X 月在中国某某大学获得博士学位。
+                </p>
+                <p>
+                    我的研究领域是 <strong>[您的研究方向]</strong>，专注于 <strong>[具体研究内容]</strong>。
+                    主要研究课题包括：(1) [研究课题1]，(2) [研究课题2]，(3) [研究课题3]。
+                </p>
+                <p>
+                    我已发表 <strong>XX 篇</strong> SCI 论文，h-index 为 <strong>XX</strong>。
+                    其中第一作者论文 <strong>X 篇</strong>，包括发表在 Nature Communications、Science Advances 等顶级期刊的文章。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教育背景 -->
+    <section id="education" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">📖 教育背景</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">20XX.XX - 20XX.XX</div>
+                    <div class="timeline-content">
+                        <h3>博士 - 专业名称</h3>
+                        <p>学院名称，大学名称，城市</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">20XX.XX - 20XX.XX</div>
+                    <div class="timeline-content">
+                        <h3>硕士 - 专业名称</h3>
+                        <p>学院名称，大学名称，城市</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">20XX.XX - 20XX.XX</div>
+                    <div class="timeline-content">
+                        <h3>本科 - 专业名称</h3>
+                        <p>大学名称，城市</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 研究成果 -->
+    <section id="research" class="section">
+        <div class="container">
+            <h2 class="section-title">📝 主要研究成果</h2>
+            <div class="research-grid">
+                <!-- 研究成果1 -->
+                <div class="research-card">
+                    <div class="research-image">
+                        <img src="research1.jpg" alt="研究1" onerror="this.src='https://via.placeholder.com/400x250'">
+                    </div>
+                    <div class="research-content">
+                        <h3>研究成果标题1</h3>
+                        <p class="research-authors"><strong>您的姓名</strong>, 合作者1, 合作者2, 等</p>
+                        <p class="research-journal">期刊名称, 2024, 卷(期): 页码</p>
+                        <p class="research-description">
+                            简要描述您的研究成果，包括研究背景、主要创新点、研究方法和重要发现...
+                        </p>
+                        <div class="research-links">
+                            <a href="#" class="btn-link">论文链接</a>
+                            <a href="#" class="btn-link">代码</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 研究成果2 -->
+                <div class="research-card">
+                    <div class="research-image">
+                        <img src="research2.jpg" alt="研究2" onerror="this.src='https://via.placeholder.com/400x250'">
+                    </div>
+                    <div class="research-content">
+                        <h3>研究成果标题2</h3>
+                        <p class="research-authors"><strong>您的姓名</strong>, 合作者1, 合作者2, 等</p>
+                        <p class="research-journal">期刊名称, 2024, 卷(期): 页码</p>
+                        <p class="research-description">
+                            简要描述您的研究成果，包括研究背景、主要创新点、研究方法和重要发现...
+                        </p>
+                        <div class="research-links">
+                            <a href="#" class="btn-link">论文链接</a>
+                            <a href="#" class="btn-link">代码</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 研究成果3 -->
+                <div class="research-card">
+                    <div class="research-image">
+                        <img src="research3.jpg" alt="研究3" onerror="this.src='https://via.placeholder.com/400x250'">
+                    </div>
+                    <div class="research-content">
+                        <h3>研究成果标题3</h3>
+                        <p class="research-authors"><strong>您的姓名</strong>, 合作者1, 合作者2, 等</p>
+                        <p class="research-journal">arXiv:2024.xxxxx, 2024 (投稿中)</p>
+                        <p class="research-description">
+                            简要描述您的研究成果，包括研究背景、主要创新点、研究方法和重要发现...
+                        </p>
+                        <div class="research-links">
+                            <a href="#" class="btn-link">预印本</a>
+                            <a href="#" class="btn-link">代码</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 发表论文 -->
+    <section id="publications" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">📄 发表论文</h2>
+            
+            <h3 class="subsection-title">第一作者论文 (X 篇)</h3>
+            <ol class="publication-list">
+                <li>
+                    <strong>您的姓名</strong>, 合作者1, 合作者2, 等. 
+                    "论文标题。" 
+                    <em>期刊名称</em>, 2024, 卷(期): 页码.
+                    <a href="#" class="pub-link">[链接]</a>
+                </li>
+                <li>
+                    <strong>您的姓名</strong>, 合作者1, 合作者2, 等. 
+                    "论文标题。" 
+                    <em>期刊名称</em>, 2023, 卷(期): 页码.
+                    <a href="#" class="pub-link">[链接]</a>
+                </li>
+                <!-- 添加更多论文 -->
+            </ol>
+
+            <h3 class="subsection-title">共同第一作者论文 (X 篇)</h3>
+            <ol class="publication-list">
+                <li>
+                    合作者1#, <strong>您的姓名#</strong>, 合作者2, 等. 
+                    "论文标题。" 
+                    <em>期刊名称</em>, 2024, 卷(期): 页码. (共同贡献)
+                    <a href="#" class="pub-link">[链接]</a>
+                </li>
+                <!-- 添加更多论文 -->
+            </ol>
+
+            <h3 class="subsection-title">合作者论文 (X 篇)</h3>
+            <ol class="publication-list">
+                <li>
+                    合作者1, <strong>您的姓名</strong>, 合作者2, 等. 
+                    "论文标题。" 
+                    <em>期刊名称</em>, 2024, 卷(期): 页码.
+                    <a href="#" class="pub-link">[链接]</a>
+                </li>
+                <!-- 添加更多论文 -->
+            </ol>
+        </div>
+    </section>
+
+    <!-- 荣誉奖项 -->
+    <section id="honors" class="section">
+        <div class="container">
+            <h2 class="section-title">🎖 荣誉奖项</h2>
+            <ul class="honors-list">
+                <li>
+                    <span class="honor-date">20XX.XX</span>
+                    <span class="honor-title">奖项名称，获奖比例：X%</span>
+                </li>
+                <li>
+                    <span class="honor-date">20XX.XX</span>
+                    <span class="honor-title">奖项名称</span>
+                </li>
+                <li>
+                    <span class="honor-date">20XX.XX</span>
+                    <span class="honor-title">奖项名称</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 工作经历 -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">💼 工作经历</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">20XX.XX - 至今</div>
+                    <div class="timeline-content">
+                        <h3>职位名称</h3>
+                        <p>单位名称，城市，国家</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">20XX.XX - 20XX.XX</div>
+                    <div class="timeline-content">
+                        <h3>研究实习生</h3>
+                        <p>实习单位，城市，国家</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="subsection-title mt-5">💬 受邀报告</h3>
+            <ul class="talks-list">
+                <li>
+                    <span class="talk-date">20XX.XX</span>
+                    <span class="talk-info">口头报告，会议名称，城市，国家</span>
+                </li>
+                <li>
+                    <span class="talk-date">20XX.XX</span>
+                    <span class="talk-info">口头报告，会议名称，城市，国家</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 技术专长 -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">💻 技术专长</h2>
+            
+            <div class="skills-category">
+                <h3>理论基础</h3>
+                <p>扎实的固体物理、量子化学、密度泛函理论(DFT)和理论催化基础</p>
+            </div>
+
+            <div class="skills-category">
+                <h3>编程语言</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Shell</span>
+                    <span class="skill-tag">Julia</span>
+                    <span class="skill-tag">MATLAB</span>
+                    <span class="skill-tag">Fortran</span>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>机器学习</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">Graph Neural Networks</span>
+                    <span class="skill-tag">Generative Models</span>
+                    <span class="skill-tag">Large Language Models</span>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>计算材料科学</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">VASP</span>
+                    <span class="skill-tag">Quantum ESPRESSO</span>
+                    <span class="skill-tag">CP2K</span>
+                    <span class="skill-tag">Pymatgen</span>
+                    <span class="skill-tag">ASE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 兴趣爱好 -->
+    <section id="hobbies" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">🎯 兴趣爱好</h2>
+            <p class="hobbies-intro">除了研究工作，我还热衷于各种活动，保持身心平衡：</p>
+            
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-icon">🏎️</div>
+                    <h3>驾驶</h3>
+                    <p>热爱自驾旅行，曾完成多次长途自驾之旅...</p>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-icon">🎱</div>
+                    <h3>台球</h3>
+                    <p>业余台球爱好者，喜欢斯诺克和中式八球...</p>
+                </div>
+                
+                <div class="hobby-card">
+                    <div class="hobby-icon">🏸</div>
+                    <h3>羽毛球</h3>
+                    <p>喜欢打羽毛球，作为放松和保持活力的方式...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>💡 感谢您访问我的主页！我乐于讨论、合作和建立新的联系。</p>
+            <p>
+                联系方式：
+                <a href="mailto:your.email@example.com">your.email@example.com</a>
+            </p>
+            <p class="footer-copyright">
+                © 2025 您的姓名. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" class="back-to-top" title="返回顶部">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
