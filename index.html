@@ -14,140 +14,188 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-            line-height: 1.8;
+            line-height: 1.6;
             color: #333;
-            background-color: #fff;
+            background-color: #f8f9fa;
             padding: 40px 20px;
         }
 
-        .container {
-            max-width: 900px;
+        .page {
+            max-width: 850px;
             margin: 0 auto;
+            background: white;
+            padding: 50px 60px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
         /* 头部 */
         .header {
             text-align: center;
             border-bottom: 3px solid #2563eb;
-            padding-bottom: 30px;
-            margin-bottom: 40px;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         .header h1 {
-            font-size: 2.5rem;
-            color: #2563eb;
-            margin-bottom: 10px;
-        }
-
-        .header .subtitle {
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 15px;
+            font-size: 2.2rem;
+            color: #1a56db;
+            margin-bottom: 8px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
         }
 
         .header .contact {
-            font-size: 0.95rem;
-            color: #666;
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 10px;
         }
 
         .header .contact a {
-            color: #2563eb;
+            color: #1a56db;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 5px;
         }
 
         .header .contact a:hover {
             text-decoration: underline;
         }
 
+        .header .contact svg {
+            width: 14px;
+            height: 14px;
+            vertical-align: middle;
+            margin-right: 3px;
+        }
+
         /* 章节标题 */
         .section {
-            margin-bottom: 40px;
+            margin-bottom: 35px;
         }
 
         .section-title {
-            font-size: 1.5rem;
-            color: #2563eb;
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 8px;
-            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #1a56db;
             font-weight: 600;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid #cbd5e1;
+            padding-bottom: 6px;
+            margin-bottom: 18px;
+            text-transform: uppercase;
         }
 
-        /* 教育和工作经历 */
+        /* 时间线项目 */
         .timeline-item {
-            margin-bottom: 25px;
+            margin-bottom: 20px;
+            position: relative;
         }
 
-        .timeline-header {
+        .item-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 5px;
+            margin-bottom: 3px;
         }
 
-        .timeline-title {
+        .item-title {
             font-weight: 600;
-            font-size: 1.1rem;
-            color: #333;
+            font-size: 1rem;
+            color: #1f2937;
         }
 
-        .timeline-date {
-            color: #666;
-            font-size: 0.9rem;
+        .item-date {
+            color: #6b7280;
+            font-size: 0.85rem;
             font-style: italic;
+            white-space: nowrap;
+            margin-left: 15px;
         }
 
-        .timeline-org {
-            color: #666;
-            margin-bottom: 5px;
-        }
-
-        .timeline-detail {
-            color: #666;
+        .item-subtitle {
+            font-style: italic;
+            color: #4b5563;
+            margin-bottom: 3px;
             font-size: 0.95rem;
+        }
+
+        .item-detail {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-left: 10px;
         }
 
         /* 研究项目 */
         .research-item {
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        .research-item:last-child {
-            border-bottom: none;
+            margin-bottom: 25px;
         }
 
         .research-title {
             font-weight: 600;
-            font-size: 1.05rem;
-            color: #333;
-            margin-bottom: 5px;
+            font-size: 0.98rem;
+            color: #1f2937;
+            margin-bottom: 3px;
         }
 
-        .research-role {
-            color: #666;
-            font-size: 0.9rem;
+        .research-meta {
+            color: #6b7280;
+            font-size: 0.85rem;
             margin-bottom: 8px;
         }
 
-        .research-desc {
-            color: #555;
+        .research-meta em {
+            color: #1a56db;
+        }
+
+        .research-points {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .research-points li {
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 6px;
+            color: #4b5563;
+            font-size: 0.92rem;
+            line-height: 1.5;
             text-align: justify;
         }
 
-        .research-link {
-            color: #2563eb;
-            text-decoration: none;
-            font-size: 0.9rem;
+        .research-points li::before {
+            content: "○";
+            position: absolute;
+            left: 0;
+            color: #1a56db;
+            font-weight: bold;
         }
 
-        .research-link:hover {
-            text-decoration: underline;
+        .research-points strong {
+            color: #1f2937;
+            font-weight: 600;
+        }
+
+        .outcome {
+            margin-top: 6px;
+            padding-left: 18px;
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+
+        .outcome strong {
+            color: #1f2937;
         }
 
         /* 论文列表 */
+        .pub-section {
+            margin-bottom: 20px;
+        }
+
+        .pub-section h3 {
+            font-size: 0.95rem;
+            color: #1f2937;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
         .pub-list {
             list-style: none;
             counter-reset: pub-counter;
@@ -155,9 +203,12 @@
 
         .pub-list li {
             counter-increment: pub-counter;
-            margin-bottom: 15px;
-            padding-left: 30px;
+            margin-bottom: 12px;
+            padding-left: 25px;
             position: relative;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #4b5563;
             text-align: justify;
         }
 
@@ -166,11 +217,12 @@
             position: absolute;
             left: 0;
             font-weight: 600;
-            color: #2563eb;
+            color: #1a56db;
         }
 
         .pub-author {
             font-weight: 600;
+            color: #1f2937;
         }
 
         .pub-journal {
@@ -178,108 +230,115 @@
         }
 
         .pub-status {
-            color: #2563eb;
+            color: #1a56db;
             font-weight: 600;
         }
 
-        /* 荣誉列表 */
-        .honor-list {
+        /* 荣誉和技能 */
+        .simple-list {
             list-style: none;
         }
 
-        .honor-list li {
-            margin-bottom: 12px;
-            padding-left: 20px;
+        .simple-list li {
             position: relative;
+            padding-left: 18px;
+            margin-bottom: 8px;
+            font-size: 0.92rem;
+            color: #4b5563;
+            line-height: 1.5;
         }
 
-        .honor-list li::before {
+        .simple-list li::before {
             content: "▪";
             position: absolute;
             left: 0;
-            color: #2563eb;
+            color: #1a56db;
             font-weight: bold;
         }
 
-        .honor-date {
-            color: #2563eb;
+        .simple-list .label {
+            color: #1a56db;
             font-weight: 600;
-            margin-right: 10px;
         }
 
-        /* 技能标签 */
-        .skills-group {
-            margin-bottom: 15px;
+        /* 技能组 */
+        .skill-item {
+            margin-bottom: 12px;
         }
 
-        .skills-group h4 {
-            color: #333;
-            margin-bottom: 8px;
-            font-size: 1rem;
+        .skill-item strong {
+            color: #1f2937;
+            font-size: 0.95rem;
+            display: block;
+            margin-bottom: 4px;
         }
 
-        .skills-group p {
-            color: #555;
-            line-height: 1.6;
+        .skill-item span {
+            color: #4b5563;
+            font-size: 0.9rem;
+            line-height: 1.5;
         }
 
         /* 页脚 */
         .footer {
-            text-align: center;
-            margin-top: 50px;
+            margin-top: 40px;
             padding-top: 20px;
-            border-top: 2px solid #e5e7eb;
-            color: #666;
-            font-size: 0.9rem;
+            border-top: 2px solid #cbd5e1;
+            text-align: center;
+            color: #6b7280;
+            font-size: 0.85rem;
+            font-style: italic;
         }
 
-        /* 响应式 */
+        /* 响应式设计 */
         @media (max-width: 768px) {
-            body {
-                padding: 20px 15px;
+            .page {
+                padding: 30px 25px;
             }
 
             .header h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
 
-            .timeline-header {
+            .item-header {
                 flex-direction: column;
                 align-items: flex-start;
             }
 
-            .timeline-date {
-                margin-top: 5px;
+            .item-date {
+                margin-left: 0;
+                margin-top: 3px;
             }
         }
 
         @media print {
             body {
+                background: white;
                 padding: 0;
             }
-            .header .contact a {
-                color: #000;
+            .page {
+                box-shadow: none;
+                padding: 20px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="page">
         <!-- 头部 -->
         <div class="header">
-            <h1>Haoxiang Yin | 殷浩翔</h1>
-            <div class="subtitle">Master's Student in Chemistry</div>
+            <h1>Haoxiang Yin | Curriculum Vitae</h1>
             <div class="contact">
-                <a href="mailto:yinhaoxiang@stu.scu.edu.cn">✉ yinhaoxiang@stu.scu.edu.cn</a>
-                <a href="tel:+8618608203890">☎ (+86) 18608203890</a>
-                <a href="https://github.com/Old6ix-Y" target="_blank">GitHub</a>
+                ✉ <a href="mailto:yinhaoxiang@stu.scu.edu.cn">yinhaoxiang@stu.scu.edu.cn</a>
+                ☎ <a href="tel:+8618608203890">(+86) 18608203890</a>
+                🔗 <a href="https://github.com/Old6ix-Y" target="_blank">GitHub: https://github.com/Old6ix-Y</a>
             </div>
         </div>
 
         <!-- 研究兴趣 -->
         <div class="section">
-            <h2 class="section-title">RESEARCH INTEREST</h2>
-            <p>
+            <h2 class="section-title">Research Interest</h2>
+            <p style="color: #4b5563; font-size: 0.92rem; line-height: 1.6;">
                 Computational Electrolyte Design; First-Principles and Molecular Dynamics Simulations;
                 Electrolyte-Electrolyte Interface Mechanisms; High-Throughput and Machine Learning Screening;
                 AI4Materials and Physics-Informed AI
@@ -288,182 +347,176 @@
 
         <!-- 教育背景 -->
         <div class="section">
-            <h2 class="section-title">EDUCATION</h2>
+            <h2 class="section-title">Education</h2>
             
             <div class="timeline-item">
-                <div class="timeline-header">
-                    <div class="timeline-title">Sichuan University</div>
-                    <div class="timeline-date">Sep. 2023 - Jun. 2026 (expected)</div>
+                <div class="item-header">
+                    <span class="item-title">Sichuan University</span>
+                    <span class="item-date">Sep. 2023 - Jun. 2026 (expected)</span>
                 </div>
-                <div class="timeline-org">M.S. in Chemistry at State Key Laboratory of Advanced Polymer Materials</div>
-                <div class="timeline-detail">– GPA: 3.64/4.0</div>
-                <div class="timeline-detail">– Centesimal grade average: 86.6</div>
+                <div class="item-subtitle">M.S. in Chemistry at State Key Laboratory of Advanced Polymer Materials</div>
+                <div class="item-detail">– GPA: 3.64/4.0</div>
+                <div class="item-detail">– Centesimal grade average: 86.6</div>
             </div>
 
             <div class="timeline-item">
-                <div class="timeline-header">
-                    <div class="timeline-title">Sichuan University</div>
-                    <div class="timeline-date">Sep. 2019 - Jun. 2023</div>
+                <div class="item-header">
+                    <span class="item-title">Sichuan University</span>
+                    <span class="item-date">Sep. 2019 - Jun. 2023</span>
                 </div>
-                <div class="timeline-org">B.S. in Applied Chemistry</div>
-                <div class="timeline-detail">– GPA: 3.48/4.0</div>
-                <div class="timeline-detail">– Centesimal grade average: 84.3</div>
+                <div class="item-subtitle">B.S. in Applied Chemistry</div>
+                <div class="item-detail">– GPA: 3.48/4.0</div>
+                <div class="item-detail">– Centesimal grade average: 84.3</div>
             </div>
         </div>
 
         <!-- 研究经历 -->
         <div class="section">
-            <h2 class="section-title">RESEARCH EXPERIENCE</h2>
+            <h2 class="section-title">Research Experience</h2>
             
             <div class="research-item">
-                <div class="research-title">Machine Learning-Assisted High-Throughput Screening of Electrolytes for Batteries</div>
-                <div class="research-role">Lead Researcher | 2025-Now</div>
-                <div class="research-desc">
-                    Developed a machine learning-assisted strategy to accelerate electrolyte discovery, addressing the limitations 
-                    of conventional trial-and-error approaches with high cost and unpredictability. Generated a diverse library of 
-                    CHOF-containing molecules using the Sauge isomer generator and custom Python scripts. Performed DFT calculations 
-                    (Gaussian) and MD simulations (GROMACS) to extract key physico-chemical properties for database construction and 
-                    model optimization. Conducted high-throughput screening based on viscosity and ion-solvent interaction strength 
-                    to identify promising electrolyte candidates, with experimental validation of electrochemical performance.
-                </div>
-                <div style="margin-top: 8px;">
-                    <a href="https://github.com/Old6ix-Y/Project_Electrolyte_Generate" class="research-link" target="_blank">
-                        → GitHub Repository
-                    </a>
+                <div class="research-title">Machine Learning–Assisted High-Throughput Screening of Electrolytes for Batteries</div>
+                <div class="research-meta">Lead Researcher | <span style="float: right; font-style: italic;">2025-Now</span></div>
+                <ul class="research-points">
+                    <li>Developed a machine learning–assisted strategy to accelerate electrolyte discovery, addressing the limitations of conventional trial-and-error approaches with high cost and unpredictability.</li>
+                    <li>Generated a diverse library of CHOF-containing molecules <strong>using the Sauge isomer generator and custom Python scripts</strong>.</li>
+                    <li><strong>Performed DFT calculations (Gaussian) and MD simulations (GROMACS)</strong> to extract key physico-chemical properties for database construction and model optimization.</li>
+                    <li>Conducted <strong>high-throughput screening</strong> based on viscosity and ion-solvent interaction strength to identify promising electrolyte candidates. Then, Experimentally validated the electrochemical performance of the screened electrolyte formulations.</li>
+                </ul>
+                <div class="outcome">
+                    <strong>Outcome:</strong> Part of the work has been uploaded to the GitHub repository: <a href="https://github.com/Old6ix-Y/Project_Electrolyte_Generate" style="color: #1a56db; text-decoration: none;">https://github.com/Old6ix-Y/Project_Electrolyte_Generate</a>.
                 </div>
             </div>
 
             <div class="research-item">
                 <div class="research-title">Weakly Solvated Functional Additive Design for Sodium Battery Electrolytes</div>
-                <div class="research-role">Master's Research Project (Lead Researcher) | 2023-2025</div>
-                <div class="research-desc">
-                    Designed a novel bi-functional additive to optimize solvation structure and stabilize interfacial chemistry in 
-                    sodium metal batteries. Performed DFT (Gaussian) and MD (MS, GROMACS, VMD) simulations to pre-screen additive 
-                    molecules and elucidate solvation and SEI formation mechanisms, guiding experimental formulation. Investigated 
-                    ion transport kinetics by variable-temperature EIS and EIS-DRT. Achieved >80% capacity retention after 2000 cycles 
-                    at 10C and stable cycling over 2500 cycles at 2C with negligible capacity fading.
-                </div>
-                <div style="margin-top: 5px; color: #666; font-style: italic;">
-                    Outcome: Manuscript submitted to Angewandte Chemie International Edition (Under Review)
+                <div class="research-meta">Master's Research Project (Lead Researcher) | <span style="float: right; font-style: italic;">2023-2025</span></div>
+                <ul class="research-points">
+                    <li><strong>Designed a novel bi-functional additive to optimize solvation structure and stabilize interfacial chemistry</strong> in sodium metal batteries.</li>
+                    <li>Performed DFT (Gaussian) and MD (MS, GROMACS, VMD) simulations to pre-screen additive molecules and elucidate solvation and SEI formation mechanisms, guiding experimental formulation.</li>
+                    <li><strong>Investigated ion transport kinetics by variable-temperature EIS and EIS-DRT</strong>, clarifying the evolution of electrolyte kinetics under the influence of additives on rate and cycling performance through insightful DRT analysis.</li>
+                    <li>Verified the additive's effectiveness through <strong>electrochemical measurements, spectroscopic analyses, and interfacial characterizations</strong>, demonstrating improved ion transport and stable SEI formation.</li>
+                    <li>Achieved <strong>>80% capacity retention after 2000 cycles at 10C and stable cycling over 2500 cycles at 2C with negligible capacity fading</strong>.</li>
+                </ul>
+                <div class="outcome">
+                    <strong>Outcome:</strong> Manuscript submitted to <em>Angewandte Chemie International Edition</em> (Under Review).
                 </div>
             </div>
 
             <div class="research-item">
                 <div class="research-title">Design of Non-Flammable Electrolytes for High-Safety, Long-Life Sodium Batteries</div>
-                <div class="research-role">Lead Researcher | 2024-2025</div>
-                <div class="research-desc">
-                    Developed flame-retardant and functional co-solvents to address flammability and safety issues in sodium batteries 
-                    while maintaining high electrochemical performance. Combined MD simulations (GROMACS) and NMR spectroscopy to reveal 
-                    an intermediate solvation structure distinct from conventional AGG configurations. Established a solvation design 
-                    strategy that balances safety with electrochemical efficiency, achieving over 4000 stable cycles and excellent 
-                    flame-retardant behavior.
-                </div>
+                <div class="research-meta">Lead Researcher | <span style="float: right; font-style: italic;">2024-2025</span></div>
+                <ul class="research-points">
+                    <li>Developed flame-retardant and functional co-solvents to address flammability and safety issues in Na batteries while maintaining high electrochemical performance.</li>
+                    <li><strong>Combined MD simulations (GROMACS) and NMR spectroscopy</strong> to reveal an intermediate solvation structure distinct from conventional AGG configurations.</li>
+                    <li><strong>Established a solvation design strategy that balances safety with electrochemical efficiency</strong>, achieving over 4000 stable cycles and excellent flame-retardant behavior.</li>
+                </ul>
             </div>
 
             <div class="research-item">
                 <div class="research-title">Nanofiller-Enhanced Ion Transport and Inorganic SEI in Solid-State Lithium Batteries</div>
-                <div class="research-role">Theoretical Calculations Contributor | 2024-2025</div>
-                <div class="research-desc">
-                    Calculated adsorption energies (Gaussian, Multiwfn) between Li⁺/Li salts anions and inorganic fillers or polymer 
-                    substrates, verifying filler-enhanced Li salt dissociation and ion transport. Simulated Li⁺ diffusion coefficients 
-                    in polymer electrolytes via MD (MS), demonstrating accelerated Li⁺ mobility with inorganic fillers.
-                </div>
-                <div style="margin-top: 5px; color: #666; font-style: italic;">
-                    Outcome: Co-author; Manuscript submitted to Small (Minor Revision)
+                <div class="research-meta">Theoretical Calculations Contributor | <span style="float: right; font-style: italic;">2024-2025</span></div>
+                <ul class="research-points">
+                    <li><strong>Calculated adsorption energies (Gaussian, Multiwfn) between Li⁺/Li salts anions and inorganic fillers or polymer substrates</strong>, verifying filler-enhanced Li salt dissociation and ion transport.</li>
+                    <li><strong>Simulated Li⁺ diffusion coefficients in polymer electrolytes via MD (MS)</strong>, demonstrating accelerated Li⁺ mobility with inorganic fillers.</li>
+                </ul>
+                <div class="outcome">
+                    <strong>Outcome:</strong> Co-author; Manuscript submitted to <em>Small</em> (Minor Revision).
                 </div>
             </div>
         </div>
 
         <!-- 论文发表 -->
         <div class="section">
-            <h2 class="section-title">PUBLICATIONS</h2>
+            <h2 class="section-title">Publications</h2>
             
-            <h3 style="margin-bottom: 15px; font-size: 1.1rem; color: #333;">First Author Papers (1 paper)</h3>
-            <ul class="pub-list">
-                <li>
-                    <span class="pub-author">HaoXiang Yin</span>, GuoRui Zhu, YingYing Zhang, Zhi Wang, Xiu-Li Wang, Gang Wu*, Yu-Zhong Wang,
-                    "Weakly Solvated Functional Additive-Mediated Rapidly Intra-Phases and Cross-Interface Na+ Transport Kinetics 
-                    Enable Fast-Charging and Long-Life Sodium Metal Batteries",
-                    <span class="pub-journal">Angewandte Chemie International Edition</span>,
-                    Manuscript number: 202520280. <span class="pub-status">(Under Review)</span>
-                </li>
-            </ul>
+            <div class="pub-section">
+                <h3>First Author Papers (1 paper)</h3>
+                <ul class="pub-list">
+                    <li>
+                        <span class="pub-author">HaoXiang Yin</span>, GuoRui Zhu, YingYing Zhang, Zhi Wang, Xiu-Li Wang, Gang Wu*, Yu-Zhong Wang,
+                        "Weakly Solvated Functional Additive-Mediated Rapidly Intra-Phases and Cross-Interface Na+ Transport Kinetics 
+                        Enable Fast-Charging and Long-Life Sodium Metal Batteries",
+                        <span class="pub-journal">Angewandte Chemie International Edition</span>,
+                        Manuscript number: 202520280. <span class="pub-status">(Under Review)</span>
+                    </li>
+                </ul>
+            </div>
 
-            <h3 style="margin: 30px 0 15px 0; font-size: 1.1rem; color: #333;">Co-first Author Papers (1 paper)</h3>
-            <ul class="pub-list">
-                <li>
-                    Yingying Zhang#, Xinrui Xiao, <span class="pub-author">HaoXiang Yin#</span>, Qingsong Liu, Xiuli Wang, Guorui Zhu*, Gang Wu*,
-                    Yuzhong Wang, "Multipaths Li+ Migration and In Situ Interfacial Alloying of Composite Solid-State Electrolyte 
-                    Enables High-Performance All-Solid-State Lithium Metal Batteries",
-                    <span class="pub-journal">Small</span>,
-                    Manuscript number: smll.202509107R1. <span class="pub-status">(Minor Revision)</span>
-                </li>
-            </ul>
-        </div>
-
-        <!-- 荣誉奖项 -->
-        <div class="section">
-            <h2 class="section-title">HONORS & CAMPUS EXPERIENCE</h2>
-            
-            <ul class="honor-list">
-                <li>
-                    <span class="honor-date">Undergraduate:</span>
-                    Awarded the Second Prize Academic Scholarship for three consecutive years
-                </li>
-                <li>
-                    <span class="honor-date">Undergraduate:</span>
-                    Served as Class President, recognized as an Outstanding Student Leader
-                </li>
-                <li>
-                    <span class="honor-date">Undergraduate:</span>
-                    Headed Science Outreach, Astronomy Society of Sichuan University; organized public lectures 
-                    and stargazing activities, broadening scientific horizons and fostering research interest
-                </li>
-                <li>
-                    <span class="honor-date">Graduate:</span>
-                    Laboratory Instrument Manager (Micro FT-IR) and Leader of Theoretical Calculations, 
-                    supporting group projects and self-learning computational chemistry
-                </li>
-                <li>
-                    <span class="honor-date">Graduate:</span>
-                    Honored as Outstanding Graduate Student and Excellent Master's Graduate of Sichuan University 
-                    for academic and research performance
-                </li>
-            </ul>
+            <div class="pub-section">
+                <h3>Co-first Author Papers (1 paper)</h3>
+                <ul class="pub-list">
+                    <li>
+                        Yingying Zhang#, Xinrui Xiao, <span class="pub-author">HaoXiang Yin#</span>, Qingsong Liu, Xiuli Wang, Guorui Zhu*, Gang Wu*,
+                        Yuzhong Wang, "Multipaths Li+ Migration and In Situ Interfacial Alloying of Composite Solid-State Electrolyte 
+                        Enables High-Performance All-Solid-State Lithium Metal Batteries",
+                        <span class="pub-journal">Small</span>,
+                        Manuscript number: smll.202509107R1. <span class="pub-status">(Minor Revision)</span>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <!-- 技能 -->
         <div class="section">
-            <h2 class="section-title">SKILLS</h2>
+            <h2 class="section-title">Skills</h2>
             
-            <div class="skills-group">
-                <h4>Languages</h4>
-                <p>Mandarin (Native), English (IELTS: 6.5)</p>
+            <div class="skill-item">
+                <strong>Languages</strong>
+                <span>Mandarin (Native), English (IELTS: 6.5)</span>
             </div>
 
-            <div class="skills-group">
-                <h4>Characterization</h4>
-                <p>FTIR, Raman, NMR, Electrochemical Workstation, Battery Testing Platform</p>
+            <div class="skill-item">
+                <strong>Characterization</strong>
+                <span>FTIR, Raman, NMR, Electrochemical Workstation, Battery Testing Platform</span>
             </div>
 
-            <div class="skills-group">
-                <h4>Theoretical Calculation</h4>
-                <p>PySCF, Gaussian, GROMACS, Materials Studio, VMD, Molclus, Multiwfn</p>
+            <div class="skill-item">
+                <strong>Theoretical Calculation</strong>
+                <span>PySCF, Gaussian, Gromacs, Materials Studio, VMD, Molclus, Multiwfn</span>
             </div>
 
-            <div class="skills-group">
-                <h4>Programming</h4>
-                <p>LaTeX, Python, Pandas, NumPy, Pytorch, Scikit-learn, MATLAB, Origin (For Test)</p>
+            <div class="skill-item">
+                <strong>Programming</strong>
+                <span>LaTeX, Python, Pandas, NumPy, Pytorch, Scikit-learn, MATLAB (For Test)</span>
             </div>
+        </div>
+
+        <!-- 荣誉与校园经历 -->
+        <div class="section">
+            <h2 class="section-title">Honors & Campus Experience</h2>
+            
+            <ul class="simple-list">
+                <li>
+                    <span class="label">Undergraduate student:</span> Awarded <strong>the Second Prize Academic Scholarship</strong> for three consecutive years; 
+                    served as <strong>Class President</strong>, recognized as an <strong>Outstanding Student Leader</strong>.
+                </li>
+                <li>
+                    <span class="label">Headed Science Outreach, Astronomy Society of Sichuan University;</span> organized public lectures and 
+                    stargazing activities, broadening scientific horizons and fostering research interest.
+                </li>
+                <li>
+                    <span class="label">Graduate student:</span> <strong>Laboratory Instrument Manager (Micro FT-IR)</strong> and <strong>Leader of Theoretical Calculations</strong>, 
+                    supporting group projects and self-learning computational chemistry.
+                </li>
+                <li>
+                    Honored as <strong>Outstanding Graduate Student</strong> and <strong>Excellent Master's Graduate of Sichuan University</strong> for 
+                    academic and research performance.
+                </li>
+            </ul>
         </div>
 
         <!-- 兴趣爱好 -->
         <div class="section">
-            <h2 class="section-title">HOBBIES</h2>
+            <h2 class="section-title">Hobbies</h2>
             
-            <div class="skills-group">
-                <h4>🏎️ Driving & Motorsports</h4>
-                <p>
+            <p style="color: #4b5563; font-size: 0.92rem; line-height: 1.6; margin-bottom: 10px;">
+                Beyond my research, I'm passionate about various activities that keep me balanced and inspired:
+            </p>
+
+            <div style="margin-bottom: 12px;">
+                <strong style="color: #1f2937; font-size: 0.95rem;">🏎️ Driving & Motorsports</strong>
+                <p style="color: #4b5563; font-size: 0.9rem; line-height: 1.5; margin-top: 4px;">
                     I'm a devoted car enthusiast and F1 fan, with Max Verstappen and Charles Leclerc as my favorite drivers. 
                     I have completed solo road trips through the Great Northwest Loop and the Yunnan-Guizhou-Sichuan Loop. 
                     I'm also an amateur sim racer, enjoying Assetto Corsa Competizione and iRacing in my spare time. 
@@ -472,17 +525,17 @@
                 </p>
             </div>
 
-            <div class="skills-group">
-                <h4>💪 Fitness & Football</h4>
-                <p>
+            <div style="margin-bottom: 12px;">
+                <strong style="color: #1f2937; font-size: 0.95rem;">💪 Fitness & Football</strong>
+                <p style="color: #4b5563; font-size: 0.9rem; line-height: 1.5; margin-top: 4px;">
                     I love fitness and football. A healthy body is the foundation for scientific research! 
                     Regular exercise helps me maintain energy and focus for my work.
                 </p>
             </div>
 
-            <div class="skills-group">
-                <h4>🍜 Cuisine & Music</h4>
-                <p>
+            <div style="margin-bottom: 12px;">
+                <strong style="color: #1f2937; font-size: 0.95rem;">🍜 Cuisine & Music</strong>
+                <p style="color: #4b5563; font-size: 0.9rem; line-height: 1.5; margin-top: 4px;">
                     I'm also a foodie and music lover. Enjoying delicious food and playing the piano help me relax completely. 
                     These hobbies provide a perfect balance to my research life and keep me creatively energized.
                 </p>
@@ -491,8 +544,11 @@
 
         <!-- 页脚 -->
         <div class="footer">
-            <p>💡 Thank you for visiting my homepage! I'm always open to discussions, collaborations, and new connections.</p>
-            <p style="margin-top: 10px;">© 2025 Haoxiang Yin. All rights reserved. | Last Updated: January 2025</p>
+            💡 Thank you for taking the time to learn about my work and interests! I'm always open to discussions, 
+            collaborations, and new connections. Feel free to reach out — I look forward to hearing from you!
+            <div style="margin-top: 10px;">
+                © 2025 Haoxiang Yin. All rights reserved. | Last Updated: January 2025
+            </div>
         </div>
     </div>
 </body>
